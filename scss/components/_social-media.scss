@@ -1,0 +1,29 @@
+@use "../utils/variables";
+.social-media{
+    display: flex;
+    flex-direction: row;
+}
+.social-media__item{
+    padding: 9px;
+    background-color: variables.$white_background-color;
+border-radius: 100px;
+margin-bottom: 30px;
+}
+.social-media__item:hover, .social-media__item:focus{
+    background-color: variables.$hover-and-button-color;
+}
+.social-media__item:not(:last-child){
+    
+margin-right: 15px;
+}
+
+.social-media__item-footer {
+    padding: 9px;
+    background-color: variables.$white_background-color;
+    border-radius: 100px;
+}
+.social-media__item-footer:not(:last-child) {
+
+    margin-right: 15px;
+}
+

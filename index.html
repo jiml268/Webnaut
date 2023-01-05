@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>studio page</title>
+  </head>
+  <body>
+    <header class="header-bar">
+      <a href="./index.html" class="header-bar__logo"> Webnaut</a>
+
+      <div class="header-bar__nav">
+        <ul class="header-bar__list">
+          <li class="header-bar__item">
+            <a
+              href="./index.html"
+              class="header-bar__link header-bar__current-page"
+            >
+              studio
+            </a>
+          </li>
+
+          <li class="header-bar__item">
+            <a href="./portfolio.html" class="header-bar__link"> Portfolio </a>
+          </li>
+        </ul>
+        <div class="header-bar__contact">
+          <ul class="header-bar__contact-list">
+            <li class="header-bar__contact-item">
+              <a
+                href="mailto:sayhello@studio.com"
+                class="header-bar__contact-link"
+              >
+                <svg class="header-bar__contact-svg" width="24px" height="24px">
+                  <use
+                    href="./images/svg/symbol-defs.svg#icon-mail-icon"
+                  ></use></svg
+                >sayhello@studio.com
+              </a>
+            </li>
+
+            <li class="header-bar__contact-item">
+              <a href="tel:+4407813797570" class="header-bar__contact-link">
+                <svg class="header-bar__contact-svg" width="24px" height="24px">
+                  <use
+                    href="./images/svg/symbol-defs.svg#icon-phone-icon"
+                  ></use></svg
+                >+44 (078) 1379 7570
+              </a>
+            </li>
+
+            <li class="header-bar__contact-item header-bar__contact-item-hide">
+              <a
+                href="https://www.google.com/maps/place/87+High+St,+London+SE20+7HW,+UK/@51.4168889,-0.0560916,17z/data=!3m1!4b1!4m5!3m4!1s0x48760171a478dc33:0x5dbe798817e074f2!8m2!3d51.4168889!4d-0.0560916"
+                class="header-bar__contact-link"
+                target="_blank"
+              >
+                <svg class="header-bar__contact-svg" width="24" height="24">
+                  <use href="./images/svg/symbol-defs.svg#icon-map"></use></svg
+                >87 High Street, London
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="header-bar__hamburger">
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          aria-label="mobile menu"
+        >
+          <svg
+            width="24px"
+            height="24px"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main>
+      <!--HERO SECTION-->
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero__background">
+            <div class="Hero__tetx">
+              <h2 class="hero__title">
+                Accelerate your business with software development
+              </h2>
+              <p class="hero__desc">
+                Our best practices can help you ensure high quality while
+                accelerating software development.
+              </p>
+              <button class="hero__button" type="button" data-modal-open>
+                Contact us
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--CLIENT SECTION-->
+      <div class="container clients">
+        <ul class="clients__list">
+          <li class="clients__items">
+            <a href="#" aria-label="logo for Adobe">
+              <svg class="clients__link abode" width="133px" height="48px">
+                <use href="./images/svg/symbol-defs.svg#icon-adobe-logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="clients__items">
+            <a href="#" aria-label="logo for Airbnd">
+              <svg class="clients__link airbnb" width="128px" height="48px">
+                <use href="./images/svg/symbol-defs.svg#icon-airbnb-logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="clients__items">
+            <a href="#" aria-label="logo for Spotify">
+              <svg class="clients__link spotify" width="140px" height="48px">
+                <use
+                  href="./images/svg/symbol-defs.svg#icon-spotify-logo"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li class="clients__items">
+            <a href="#" aria-label="logo for Discord">
+              <svg class="clients__link discord" width="171px" height="48px">
+                <use
+                  href="./images/svg/symbol-defs.svg#icon-discord-logo"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li class="clients__items">
+            <a href="#" aria-label="logo for Amazon">
+              <svg class="clients__link amazon" width="110px" height="48px">
+                <use href="./images/svg/symbol-defs.svg#icon-amazon-logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="clients__items">
+            <a href="#" aria-label="logo for Dropbox">
+              <svg class="clients__link dropbox" width="163px" height="48px">
+                <use
+                  href="./images/svg/symbol-defs.svg#icon-dropbox-logo"
+                ></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!--PROJECT STAGES-->
+      <section class="project-stage">
+        <div class="container project-stage__flex">
+          <p class="project-stage__header-text">Project Stages</p>
+          <div class="project-stage__header-flex">
+            <h2 class="project-stage__main-header">
+              How your project will go?
+            </h2>
+
+            <button
+              class="project-stage__button project-stage__button-top"
+              type="button"
+            >
+              Subscribe<svg
+                class="project-stage__button-icon"
+                fill="black"
+                width="30px"
+                height="30px"
+              >
+                <use
+                  href="./images/svg/symbol-defs.svg#icon-button-arrow-icon"
+                ></use>
+              </svg>
+            </button>
+          </div>
+          <ul class="project-stage__list">
+            <li class="project-stage__item">
+              <svg class="project-stage__image" width="30px" height="30px">
+                <use
+                  href="./images/svg/symbol-defs.svg#icon-calendar-icon"
+                ></use>
+              </svg>
+              <h3 class="project-stage__header">Pre-Design</h3>
+              <p class="project-stage__text">
+                Pre-design makes sure you get off to the right start with the
+                design and development of your app, and ensures a great final
+                product.
+              </p>
+            </li>
+            <li class="project-stage__item">
+              <svg class="project-stage__image" width="30px" height="30px">
+                <use href="./images/svg/symbol-defs.svg#icon-draw-icon"></use>
+              </svg>
+              <h3 class="project-stage__header">Design</h3>
+              <p class="project-stage__text">
+                Once you have completed the pre-design stage and you &apos;ve
+                got the full recommendation of approach, you&apos;re ready to
+                move onto design.
+              </p>
+            </li>
+            <li class="project-stage__item">
+              <svg class="project-stage__image" width="30px" height="30px">
+                <use href="./images/svg/symbol-defs.svg#icon-code-icon"></use>
+              </svg>
+              <h3 class="project-stage__header">Development</h3>
+              <p class="project-stage__text">
+                The full build process, to get to the day-one version of your
+                app, is typically between three and six months long.
+              </p>
+            </li>
+            <li class="project-stage__item">
+              <svg class="project-stage__image" width="30px" height="30px">
+                <use href="./images/svg/symbol-defs.svg#icon-bug-icon"></use>
+              </svg>
+              <h3 class="project-stage__header">Support</h3>
+              <p class="project-stage__text">
+                Having completed each of the stages outlined so far in this
+                guide, you should now have a live app which your target audience
+                has started using.
+              </p>
+            </li>
+          </ul>
+          <button
+            class="project-stage__button project-stage__button-bottom"
+            type="button"
+          >
+            Subscribe<svg
+              class="project-stage__button-icon"
+              fill="black"
+              width="30px"
+              height="30px"
+            >
+              <use
+                href="./images/svg/symbol-defs.svg#icon-button-arrow-icon"
+              ></use>
+            </svg>
+          </button>
+        </div>
+      </section>
+      <!--SPECIALIZATION SECTION-->
+      <div class="container specialization">
+        <p class="specialization__title">Specialization</p>
+        <h3 class="specialization__header">Our Profession</h3>
+        <ul class="specialization__list">
+          <li class="specialization__item">
+            <h4 class="specialization__type">Desktop Apps</h4>
+            <button class="specialization__button" type="button">
+              Learn More
+            </button>
+
+            <picture>
+              <source
+                srcset="
+                  ./images/studio/macbook-desk.jpg    1x,
+                  ./images/studio/macbook-desk@2x.jpg 2x
+                "
+                media="(min-width: 1200px)"
+                width="286"
+                height="155"
+              />
+
+              <source
+                srcset="
+                  ./images/studio/macbook-tablet.jpg    1x,
+                  ./images/studio/macbook-tablet@2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+                width="228"
+                height="124"
+              />
+
+              <source
+                srcset="
+                  ./images/studio/macbook-mobile.jpg    1x,
+                  ./images/studio/macbook-mobile@2x.jpg 2x
+                "
+                media="(min-width: 480px)"
+                width="350"
+                height="171"
+              />
+
+              <source
+                srcset="
+                  ./images/studio/macbook-tablet.jpg    1x,
+                  ./images/studio/macbook-tablet@2x.jpg 2x
+                "
+                media="(max-width: 479px)"
+                width="228"
+                height="124"
+              />
+
+              <img
+                class="specialization__image"
+                src="./images/studio/macbook-img-desk.jpg"
+                alt="Macbook Picture"
+                width="270"
+                height="260"
+              />
+            </picture>
+          </li>
+          <li class="specialization__item">
+            <h4 class="specialization__type">Mobile Apps</h4>
+            <button class="specialization__button" type="button">
+              Learn More
+            </button>
+            <picture>
+              <source
+                srcset="
+                  ./images/studio/iphone-desk.jpg    1x,
+                  ./images/studio/iphone-desk@2x.jpg 2x
+                "
+                media="(min-width: 1200px)"
+                width="209"
+                height="154"
+              />
+
+              <source
+                srcset="
+                  ./images/studio/iphone-tablet.jpg    1x,
+                  ./images/studio/iphone-tablet@2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+                width="209"
+                height="124"
+              />
+
+              <source
+                srcset="
+                  ./images/studio/iphone-mobile.jpg    1x,
+                  ./images/studio/iphone-mobile@2x.jpg 2x
+                "
+                media="(min-width: 480px)"
+                width="231"
+                height="171"
+              />
+
+              <source
+                srcset="
+                  ./images/studio/iphone-tablet.jpg    1x,
+                  ./images/studio/iphone-tablet@2x.jpg 2x
+                "
+                media="(max-width: 479px)"
+                width="209"
+                height="124"
+              />
+              <img
+                class="specialization__image"
+                src="./images/studio/iphone-img-desk.jpg"
+                alt="I-phone Picture"
+                width="270"
+                height="260"
+              />
+            </picture>
+          </li>
+          <li class="specialization__item">
+            <h4 class="specialization__type">Design Solutions</h4>
+            <button class="specialization__button" type="button">
+              Learn More
+            </button>
+
+            <picture>
+              <source
+                srcset="
+                  ./images/studio/3d-desk.jpg    1x,
+                  ./images/studio/3d-desk@2x.jpg 2x
+                "
+                media="(min-width: 1200px)"
+                width="285"
+                height="179"
+              />
+
+              <source
+                srcset="
+                  ./images/studio/3d-tablet.jpg    1x,
+                  ./images/studio/3d-tablet@2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+                width="198"
+                height="124"
+              />
+
+              <source
+                srcset="
+                  ./images/studio/3d-mobile.jpg    1x,
+                  ./images/studio/3d-mobile@2x.jpg 2x
+                "
+                media="(min-width: 480px)"
+                width="285"
+                height="171"
+              />
+
+              <source
+                srcset="
+                  ./images/studio/3d-tablet.jpg    1x,
+                  ./images/studio/3d-tablet@2x.jpg 2x
+                "
+                media="(max-width: 479px)"
+                width="198"
+                height="124"
+              />
+              <img
+                class="specialization__image"
+                src="./images/studio/3d-img-desk.jpg"
+                alt="3D image"
+                width="270"
+                height="260"
+              />
+            </picture>
+          </li>
+        </ul>
+      </div>
+      <!--OUR TEAM-->
+      <div class="our-team container">
+        <p class="our-team__header-text">Our Team</p>
+        <div class="our-team__header-flex">
+          <h2 class="our-team__header">Meet our professional team!</h2>
+          <button class="our-team__button our-team__buttton-top" type="button">
+            Hire us<svg
+              class="project-stage__button-icon"
+              fill="black"
+              width="20px"
+              height="20px"
+            >
+              <use
+                href="./images/svg/symbol-defs.svg#icon-button-arrow-icon"
+              ></use>
+            </svg>
+          </button>
+        </div>
+        <ul class="our-team__list">
+          <li class="our-team__item">
+            <div class="our-team__thumb">
+              <picture>
+                <source
+                  srcset="
+                    ./images/studio/dominic-evans-desk.jpg    1x,
+                    ./images/studio/dominic-evans-desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  width="270"
+                  height="267"
+                />
+
+                <source
+                  srcset="
+                    ./images/studio/dominic-evans-tablet.jpg    1x,
+                    ./images/studio/dominic-evans-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  width="354"
+                  height="267"
+                />
+
+                <source
+                  srcset="
+                    ./images/studio/dominic-evans-mobile.jpg    1x,
+                    ./images/studio/dominic-evans-mobile@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                  width="450"
+                  height="298"
+                />
+
+                <source
+                  srcset="
+                    ./images/studio/dominic-evans-mobile.jpg    1x,
+                    ./images/studio/dominic-evans-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 479px)"
+                  width="100%"
+                  height="298"
+                />
+                <img
+                  class="our-team__image"
+                  src="./images/studio/dominic-evans-desk.jpg"
+                  alt="dominic evans picture"
+                  width="270"
+                  height="267"
+                />
+              </picture>
+              <p class="our-team__job-title">Product Designer</p>
+            </div>
+            <p class="our-team__employee">Dominic Evans</p>
+            <ul class="social-media">
+              <li class="social-media__item">
+                <a href="#" aria-label="Instagram logo"
+                  ><svg width="20px" height="20px">
+                    <use
+                      href="./images/svg/symbol-defs.svg#icon-instagram-icon"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-media__item">
+                <a href="#" aria-label="Twitter logo"
+                  ><svg width="20px" height="20px">
+                    <use
+                      href="./images/svg/symbol-defs.svg#icon-twitter-icon"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-media__item">
+                <a href="#" aria-label="Facebook logo"
+                  ><svg width="20px" height="20px">
+                    <use
+                      href="./images/svg/symbol-defs.svg#icon-facebook-icon"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-media__item">
+                <a href="#" aria-label="linkedin logo"
+                  ><svg width="20px" height="20px">
+                    <use
+                      href="./images/svg/symbol-defs.svg#icon-linkedin-icon"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="our-team__item">
+            <div class="our-team__thumb">
+              <picture>
+                <source
+                  srcset="
+                    ./images/studio/amanda-taylor-desk.jpg    1x,
+                    ./images/studio/amanda-taylor-desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  width="270"
+                  height="267"
+                />
+
+                <source
+                  srcset="
+                    ./images/studio/amanda-taylor-tablet.jpg    1x,
+                    ./images/studio/amanda-taylor-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  width="354"
+                  height="267"
+                />
+
+                <source
+                  srcset="
+                    ./images/studio/amanda-taylor-mobile.jpg    1x,
+                    ./images/studio/amanda-taylor-mobile@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                  width="450"
+                  height="298"
+                />
+
+                <source
+                  srcset="
+                    ./images/studio/amanda-taylor-mobile.jpg    1x,
+                    ./images/studio/amanda-taylor-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 479px)"
+                  width="100%"
+                  height="298"
+                />
+                <img
+                  class="our-team__image"
+                  src="./images/studio/amanda-taylor-desk.jpg"
+                  alt="amanda taylor picture"
+                  width="270"
+                  height="267"
+                />
+              </picture>
+
+              <p class="our-team__job-title">Frontend Developer</p>
+            </div>
+            <p class="our-team__employee">Amanda Taylor</p>
+            <ul class="social-media">
+              <li class="social-media__item">
+                <a href="#" aria-label="Instagram logo"
+                  ><svg width="20px" height="20px">
+                    <use
+                      href="./images/svg/symbol-defs.svg#icon-instagram-icon"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-media__item">
+                <a href="#" aria-label="Twitter logo"
+                  ><svg width="20px" height="20px">
+                    <use
+                      href="./images/svg/symbol-defs.svg#icon-twitter-icon"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-media__item">
+                <a href="#" aria-label="Facebook logo"
+                  ><svg width="20px" height="20px">
+                    <use
+                      href="./images/svg/symbol-defs.svg#icon-facebook-icon"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-media__item">
+                <a href="#" aria-label="linkedin logo"
+                  ><svg width="20px" height="20px">
+                    <use
+                      href="./images/svg/symbol-defs.svg#icon-linkedin-icon"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="our-team__item">
+            <div class="our-team__thumb">
+              <picture>
+                <source
+                  srcset="
+                    ./images/studio/jane-wilsher-desk.jpg    1x,
+                    ./images/studio/jane-wilsher-desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  width="270"
+                  height="267"
+                />
+
+                <source
+                  srcset="
+                    ./images/studio/jane-wilsher-tablet.jpg    1x,
+                    ./images/studio/jane-wilsher-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  width="354"
+                  height="270"
+                />
+
+                <source
+                  srcset="
+                    ./images/studio/jane-wilsher-mobile.jpg    1x,
+                    ./images/studio/jane-wilsher-mobile@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                  width="450"
+                  height="298"
+                />
+
+                <source
+                  srcset="
+                    ./images/studio/jane-wilsher-mobile.jpg    1x,
+                    ./images/studio/jane-wilsher-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 479px)"
+                  width="100%"
+                  height="298"
+                />
+                <img
+                  class="our-team__image"
+                  src="./images/studio/jane-wilsher-desk.jpg"
+                  alt="jane wilsher picture"
+                  width="270"
+                  height="267"
+                />
+              </picture>
+
+              <p class="our-team__job-title">Marketing</p>
+            </div>
+            <p class="our-team__employee">Jane Wilsher</p>
+            <ul class="social-media">
+              <li class="social-media__item">
+                <a href="#" aria-label="Instagram logo"
+                  ><svg width="20px" height="20px">
+                    <use
+                      href="./images/svg/symbol-defs.svg#icon-instagram-icon"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-media__item">
+                <a href="#" aria-label="Twitter logo"
+                  ><svg width="20px" height="20px">
+                    <use
+                      href="./images/svg/symbol-defs.svg#icon-twitter-icon"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-media__item">
+                <a href="#" aria-label="Facebook logo"
+                  ><svg width="20px" height="20px">
+                    <use
+                      href="./images/svg/symbol-defs.svg#icon-facebook-icon"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-media__item">
+                <a href="#" aria-label="linkedin logo"
+                  ><svg width="20px" height="20px">
+                    <use
+                      href="./images/svg/symbol-defs.svg#icon-linkedin-icon"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="our-team__item">
+            <div class="our-team__thumb">
+              <picture>
+                <source
+                  srcset="
+                    ./images/studio/henry-sharp-desk.jpg    1x,
+                    ./images/studio/henry-sharp-desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  width="270"
+                  height="267"
+                />
+
+                <source
+                  srcset="
+                    ./images/studio/henry-sharp-tablet.jpg    1x,
+                    ./images/studio/henry-sharp-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  width="354"
+                  height="267"
+                />
+
+                <source
+                  srcset="
+                    ./images/studio/henry-sharp-mobile.jpg    1x,
+                    ./images/studio/henry-sharp-mobile@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                  width="450"
+                  height="298"
+                />
+
+                <source
+                  srcset="
+                    ./images/studio/henry-sharp-mobile.jpg    1x,
+                    ./images/studio/henry-sharp-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 479px)"
+                  width="100%"
+                  height="298"
+                />
+                <img
+                  class="our-team__image"
+                  src="./images/studio/henry-sharp-desk.jpg"
+                  alt="henry sharp picture"
+                  width="270"
+                  height="267"
+                />
+              </picture>
+
+              <p class="our-team__job-title">UI Designer</p>
+            </div>
+            <p class="our-team__employee">Henry Sharp</p>
+            <ul class="social-media">
+              <li class="social-media__item">
+                <a href="#" aria-label="Instagram logo"
+                  ><svg width="20px" height="20px">
+                    <use
+                      href="./images/svg/symbol-defs.svg#icon-instagram-icon"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-media__item">
+                <a href="#" aria-label="Twitter logo"
+                  ><svg width="20px" height="20px">
+                    <use
+                      href="./images/svg/symbol-defs.svg#icon-twitter-icon"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-media__item">
+                <a href="#" aria-label="Facebook logo"
+                  ><svg width="20px" height="20px">
+                    <use
+                      href="./images/svg/symbol-defs.svg#icon-facebook-icon"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-media__item">
+                <a href="#" aria-label="linkedin logo"
+                  ><svg width="20px" height="20px">
+                    <use
+                      href="./images/svg/symbol-defs.svg#icon-linkedin-icon"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <button class="our-team__button our-team__buttton-bottom" type="button">
+          Hire us<svg
+            class="project-stage__button-icon"
+            fill="black"
+            width="30px"
+            height="30px"
+          >
+            <use
+              href="./images/svg/symbol-defs.svg#icon-button-arrow-icon"
+            ></use>
+          </svg>
+        </button>
+      </div>
+
+      <!--NEWSLETTER & CONTACT US-->
+      <div class="newsletter-contact container">
+        <ul class="newsletter-contact_list">
+          <li class="newsletter-contact_item">
+            <div class="newsletter-contact_container">
+              <p class="newsletter-contact__header">Stay tuned</p>
+              <p class="newsletter-contact__text">
+                Subcribe to our newsletter to receive the latest updates
+              </p>
+              <form class="newsletter-contact__form" action="#">
+                <label class="newsletter-contact__thumb">
+                  <input
+                    class="newsletter-contact__input"
+                    required
+                    type="email"
+                    name="email"
+                    placeholder="E-mail"
+                  />
+                </label>
+                <button class="newsletter-contact__button" type="submit">
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </li>
+          <li class="newsletter-contact_item">
+            <div class="contact_container">
+              <ul class="contact_list">
+                <li class="contact_item">
+                  <a href="tel:+4407813797570" class="newsletter-contact_link">
+                    <svg
+                      class="newsletter-contact_icon"
+                      width="20px"
+                      height="20px"
+                    >
+                      <use
+                        href="./images/svg/symbol-defs.svg#icon-phone-icon"
+                      ></use></svg
+                    >+44 (078) 1379 7570
+                  </a>
+                </li>
+
+                <li class="contact_item">
+                  <a
+                    href="mailto:sayhello@studio.com"
+                    class="newsletter-contact_link"
+                  >
+                    <svg
+                      class="newsletter-contact_icon"
+                      width="20px"
+                      height="20px"
+                    >
+                      <use
+                        href="./images/svg/symbol-defs.svg#icon-mail-icon"
+                      ></use></svg
+                    >sayhello@studio.com
+                  </a>
+                </li>
+
+                <li class="contact_item">
+                  <a
+                    href="https://www.google.com/maps/place/87+High+St,+London+SE20+7HW,+UK/@51.4168889,-0.0560916,17z/data=!3m1!4b1!4m5!3m4!1s0x48760171a478dc33:0x5dbe798817e074f2!8m2!3d51.4168889!4d-0.0560916"
+                    target="_blank"
+                    class="newsletter-contact_link"
+                  >
+                    <svg
+                      class="newsletter-contact_icon"
+                      width="20px"
+                      height="20px"
+                    >
+                      <use
+                        href="./images/svg/symbol-defs.svg#icon-map"
+                      ></use></svg
+                    >87 High Street, London, <br />United Kingdom
+                  </a>
+                </li>
+                <li>
+                  <ul class="social-media">
+                    <li class="social-media__item">
+                      <a href="#" aria-label="Instagram logo"
+                        ><svg width="20px" height="20px">
+                          <use
+                            href="./images/svg/symbol-defs.svg#icon-instagram-icon"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-media__item">
+                      <a href="#" aria-label="Twitter logo"
+                        ><svg width="20px" height="20px">
+                          <use
+                            href="./images/svg/symbol-defs.svg#icon-twitter-icon"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-media__item">
+                      <a href="#" aria-label="Facebook logo"
+                        ><svg width="20px" height="20px">
+                          <use
+                            href="./images/svg/symbol-defs.svg#icon-facebook-icon"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-media__item">
+                      <a href="#" aria-label="linkedin logo"
+                        ><svg width="20px" height="20px">
+                          <use
+                            href="./images/svg/symbol-defs.svg#icon-linkedin-icon"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <footer class="container">
+      <section class="footer__section">
+        <div class="footer__nav-section">
+          <a class="footer__logo" href="./index.html"> Webnaut</a>
+          <ul class="social-media footer__social-media-top">
+            <li class="social-media__item-footer">
+              <a href="#" aria-label="Instagram logo"
+                ><svg width="20px" height="20px">
+                  <use
+                    href="./images/svg/symbol-defs.svg#icon-instagram-icon"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media__item-footer">
+              <a href="#" aria-label="Twitter logo"
+                ><svg width="20px" height="20px">
+                  <use
+                    href="./images/svg/symbol-defs.svg#icon-twitter-icon"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media__item-footer">
+              <a href="#" aria-label="Facebook logo"
+                ><svg width="20px" height="20px">
+                  <use
+                    href="./images/svg/symbol-defs.svg#icon-facebook-icon"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media__item-footer">
+              <a href="#" aria-label="linkedin logo"
+                ><svg width="20px" height="20px">
+                  <use
+                    href="./images/svg/symbol-defs.svg#icon-linkedin-icon"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <ul class="footer__nav">
+            <li class="footer__nav-item">
+              <a href="./index.html"> studio </a>
+            </li>
+
+            <li class="footer__nav-item">
+              <a href="./portfolio.html" class="header-bar__link">
+                Portfolio
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__contact-section">
+          <ul class="footer__contact-list">
+            <li class="footer__item">
+              <a class="footer__item-link" href="tel:+4407813797570">
+                <svg class="footer__svg" width="20px" height="20px">
+                  <use
+                    href="./images/svg/symbol-defs.svg#icon-phone-icon"
+                  ></use></svg
+                >+44 (078) 1379 7570
+              </a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__item-link" href="mailto:sayhello@studio.com">
+                <svg class="footer__svg" width="20px" height="20px">
+                  <use
+                    href="./images/svg/symbol-defs.svg#icon-mail-icon"
+                  ></use></svg
+                >sayhello@studio.com
+              </a>
+            </li>
+
+            <li class="footer__item">
+              <a
+                class="footer__item-link"
+                href="https://www.google.com/maps/place/87+High+St,+London+SE20+7HW,+UK/@51.4168889,-0.0560916,17z/data=!3m1!4b1!4m5!3m4!1s0x48760171a478dc33:0x5dbe798817e074f2!8m2!3d51.4168889!4d-0.0560916"
+                target="_blank"
+              >
+                <svg class="footer__svg" width="20px" height="20px">
+                  <use
+                    href="./images/svg/symbol-defs.svg#icon-location-icon"
+                  ></use></svg
+                >87 High Street, London, United Kingdom
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer_social-section">
+          <ul class="social-media footer__social-media-bottom">
+            <li class="social-media__item">
+              <a href="#" aria-label="Instagram logo"
+                ><svg width="20px" height="20px">
+                  <use
+                    href="./images/svg/symbol-defs.svg#icon-instagram-icon"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media__item">
+              <a href="#" aria-label="Twitter logo"
+                ><svg width="20px" height="20px">
+                  <use
+                    href="./images/svg/symbol-defs.svg#icon-twitter-icon"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media__item">
+              <a href="#" aria-label="Facebook logo"
+                ><svg width="20px" height="20px">
+                  <use
+                    href="./images/svg/symbol-defs.svg#icon-facebook-icon"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media__item">
+              <a href="#" aria-label="linkedin logo"
+                ><svg width="20px" height="20px">
+                  <use
+                    href="./images/svg/symbol-defs.svg#icon-linkedin-icon"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </footer>
+    <!--Modal Section-->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal-window">
+        <button
+          type="button"
+          class="modal-window__close-button"
+          data-modal-close
+        >
+          <svg width="11" height="11">
+            <use href="./images/svg/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="modal-window__title">
+          Leave your information and we'll call you back
+        </p>
+
+        <form class="modal-window__form">
+          <label class="modal-window__label">
+            Name
+            <svg class="modal-window__icon" width="18" height="18">
+              <use href="./images/svg/icons.svg#icon-person-black"></use>
+            </svg>
+            <input
+              type="text"
+              name="name"
+              class="modal-window__input"
+              placeholder="Enter your name"
+              required
+            />
+          </label>
+          <label class="modal-window__label">
+            Telephone
+            <svg class="modal-window__icon" width="18" height="18">
+              <use href="./images/svg/icons.svg#icon-phone-black"></use>
+            </svg>
+            <input
+              required
+              type="tel"
+              name="phone"
+              placeholder="+44 (0XX) XXXX XXXX"
+              class="modal-window__input"
+            />
+          </label>
+          <label class="modal-window__label">
+            E-mail
+            <svg class="modal-window__icon" width="18" height="18">
+              <use href="./images/svg/icons.svg#icon-email-black"></use>
+            </svg>
+            <input
+              required
+              type="email"
+              name="email"
+              placeholder="example@mail.com"
+              class="modal-window__input"
+            />
+          </label>
+
+          <label class="modal-window__label">
+            Comments
+
+            <textarea
+              name="comment"
+              rows="5"
+              class="modal-window__input-comment"
+              placeholder="Enter the text"
+            ></textarea>
+          </label>
+
+          <input
+            required
+            class="checkbox"
+            type="checkbox"
+            name="terms"
+            value="agree"
+            id="checkbox-policy"
+          />
+          <label class="modal__checkbox-label" for="checkbox-policy">
+            <span class="modal-checkbox">
+              <svg width="11px" height="8px">
+                <use href="./images/svg/icons.svg#icon-checkmark"></use>
+              </svg>
+            </span>
+            <span class="modal__i-agree-text">
+              I agree to
+              <a href="#" target="_blank" class="modal__terms-condition-link">
+                Terms and Conditions
+              </a>
+              and
+              <a href="#" target="_blank" class="modal__terms-condition-link">
+                Data Policy
+              </a>
+            </span>
+          </label>
+          <button type="submit" class="modal-submit-button">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <ul class="menu__header">
+        <li>
+          <a class="menu__logo" href="./index.html"> Webnaut</a>
+        </li>
+        <li>
+          <button class="menu-toggle js-close-menu">
+            <svg
+              fill="#000000"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </li>
+      </ul>
+
+      <ul class="mobile-menu">
+        <li class="mobile-menu__item">
+          <a
+            href="./index.html"
+            class="mobile-menu__link mobile-menu__current-page"
+          >
+            studio</a
+          >
+        </li>
+        <li class="mobile-menu__item">
+          <a href="./portfolio.html" class="mobile-menu__link"> Portfolio</a>
+        </li>
+      </ul>
+      <div class="mobile-contact-footer">
+        <ul class="mobile-contact">
+          <li>
+            <a href="tel:+4407813797570" class="mobile-contact__link-phone"
+              ><svg class="mobile-contact__svg" width="20px" height="20px">
+                <use href="./images/svg/symbol-defs.svg#icon-phone-icon"></use>
+              </svg>
+              +44 (078) 1379 7570</a
+            >
+          </li>
+          <li>
+            <a
+              href="mailto:sayhello@studio.com"
+              class="mobile-contact__link-email"
+            >
+              <svg class="mobile-contact__svg" width="20px" height="20px">
+                <use
+                  href="./images/svg/symbol-defs.svg#icon-mail-icon"
+                ></use></svg
+              >sayhello@studio.com</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="mobile-contact__link-phone"
+              href="https://www.google.com/maps/place/87+High+St,+London+SE20+7HW,+UK/@51.4168889,-0.0560916,17z/data=!3m1!4b1!4m5!3m4!1s0x48760171a478dc33:0x5dbe798817e074f2!8m2!3d51.4168889!4d-0.0560916"
+              target="_blank"
+            >
+              <svg class="mobile-contact__svg" width="20px" height="20px">
+                <use
+                  href="./images/svg/symbol-defs.svg#icon-location-icon"
+                ></use></svg
+              >87 High Street, London, United Kingdom
+            </a>
+          </li>
+        </ul>
+        <ul class="mobile-media">
+          <li class="mobile-media__item">
+            <a href="#" target="_blank" class="mobile-media__link">
+              Instagram
+            </a>
+          </li>
+          <li class="mobile-media__item">
+            <a href="#" target="_blank" class="mobile-media__link"> Twitter </a>
+          </li>
+          <li class="mobile-media__item">
+            <a href="#" target="_blank" class="mobile-media__link">
+              Facebook
+            </a>
+          </li>
+          <li class="mobile-media__item">
+            <a href="#" target="_blank" class="mobile-media__link">
+              LinkedIn
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/modal.js"></script>
+    <script defer src="js/mobile-menu.js"></script>
+  </body>
+</html>

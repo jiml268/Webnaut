@@ -1,0 +1,140 @@
+
+.clients__list{
+    margin-top: 133px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+align-items: center}
+
+.clients__link{
+    height: 48px;
+    fill: #B1B1B1;
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .clients__list{
+        display: flex;
+        flex-direction: row;
+flex-wrap: wrap;
+    width: 390px;
+    margin: 60px auto 100px auto;
+    justify-content: space-between;
+} 
+.clients__items:not(:nth-last-child(-n + 2)){
+
+    padding-bottom: 29px;
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .clients__list{
+        display: flex;
+    width: 738px;
+max-width: 768px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .clients__items{
+        display: flex;
+    }
+    .clients__items:nth-of-type(1){
+        order:1;
+        margin-right: 153px;
+        margin-bottom: 36px;
+    }
+    
+    .clients__items:nth-of-type(2){
+        order:2;
+        margin-right: 153px;
+        margin-bottom: 36px;
+    }
+    .clients__items:nth-of-type(3){
+        order:4;
+        margin-right: 162px;
+    }
+    .clients__items:nth-of-type(4){
+        order:3;
+        margin-bottom: 36px;
+    }
+    .clients__items:nth-of-type(5){
+        order:5;
+        margin-right: 162px;
+
+    }
+    .clients__items:nth-of-type(6){
+        order:6;
+    }
+}
+   
+   
+
+@media (min-width: 1200px){
+    .clients__list{
+        display: flex;
+        flex-direction: row;
+    width: 1170px;
+justify-content:normal;   }
+
+.clients__items{
+    display: flex;
+}
+
+.clients__items:nth-of-type(1){
+    order:1
+}
+
+.clients__items:nth-of-type(2){
+    order:3
+}
+.clients__items:nth-of-type(3){
+    order:6
+}
+.clients__items:nth-of-type(4){
+    order:2
+}
+.clients__items:nth-of-type(5){
+    order:5
+}
+.clients__items:nth-of-type(6){
+    order:4
+}
+
+    .clients__items:not(:nth-child(3)){
+
+margin-right: 65px;
+margin-left: 0px;
+
+
+} 
+
+
+}
+
+
+
+
+
+.abode:hover, .abode:focus{fill:#FA0C00;}
+
+.discord:hover,.discord:focus{fill:#23272A;}
+
+.airbnb:hover,.airbnb:focus{fill:#FF5A5F;}
+
+.dropbox:hover,.dropbox:focus{
+    --dropbox-icon: #0061FF;
+    --dropbox-text: #000000;
+  }
+
+
+
+.amazon:hover,.amazon:focus{
+
+--amazon-smile: #FF9900;
+--amazon-text: #000000;
+}
+
+
+.spotify:hover,.spotify:focus{
+    fill:#1ED760;}
+

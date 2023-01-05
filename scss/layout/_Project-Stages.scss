@@ -1,0 +1,183 @@
+@use "../utils/variables";
+.project-stage__button-top{
+    display: none;
+}
+
+.project-stage{
+    max-width: 479;
+    margin-top: 40px;
+}
+
+.project-stage__flex{
+    display: flex;
+flex-direction: column;
+}
+
+.project-stage__header-text{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(21/14);
+    color: variables.$header-bar-link;
+
+}
+
+.project-stage__header-flex{
+    display: flex;
+        justify-content: space-between;
+}
+
+
+.project-stage__main-header{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 27px;
+    line-height: calc(40/27);
+    text-transform: capitalize;
+    color: variables.$header-bar-link;
+    margin-bottom: 30px;
+}
+    
+.project-stage__list{
+margin-top: 30px;
+display: flex;
+flex-direction: column;
+}
+
+.project-stage__item{
+
+padding-top: 30px;
+}
+
+.project-stage__image{
+margin-bottom: 46px;
+
+}
+
+.project-stage__header{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: calc(24/16);
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+.project-stage__text{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: calc(20/14);
+letter-spacing: -0.2px;
+color: variables.$project-stage-text;
+margin-bottom: 30px;
+
+}
+
+.project-stage__button{
+    display: flex;
+    width: 161px;
+height: 52px;
+    background: variables.$hover-and-button-color;
+border-radius: 100px;
+justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 10px 17px;
+}
+
+.project-stage__button-icon{
+ margin-left: 21px;  
+    fill: white;
+}
+
+@media (min-width: 468px) and (max-width: 767px) {
+    .project-stage__button-top {
+            display: none;
+        }
+    
+        .project-stage__button-bottom {
+            display: flex;
+        }
+.project-stage {
+        max-width: 480px;
+        width: 480px;
+    }
+
+    .project-stage__list {
+        width: 480px;
+        
+    }
+
+    .project-stage__item {
+        width: 450px;
+    }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1199px){
+
+    .project-stage__button-top {
+            display: flex;
+        }
+.project-stage__button-bottom {
+    display: none;
+}
+
+    .project-stage{
+        max-width: 768px;   
+        width: 768px ;
+    }
+
+    .project-stage__list{
+        width: 768px;
+display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+} 
+
+.project-stage__item {
+    width: 354px;
+}
+.project-stage__item:not(:last-child) {
+    margin-right: 30px;
+}
+}
+
+@media (min-width: 1200px) {
+.project-stage__button-bottom {
+        display: none;
+    }
+
+    .project-stage {
+        max-width: 480px;
+        width: 480px;
+        margin-left: auto;
+    margin-right: auto;
+    }
+
+    .project-stage {
+        max-width: 1200px;
+        width: 1200px;
+    }
+
+    .project-stage__list {
+        width: 1170px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+.project-stage__item{
+    width: 270px;
+}
+
+.project-stage__item:not(:last-child) {
+    margin-right: 30px;
+}
+}

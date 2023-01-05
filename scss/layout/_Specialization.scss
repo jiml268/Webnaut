@@ -1,0 +1,110 @@
+@use "../utils/variables";
+
+.specialization__title{
+    margin-top: 60px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: calc(21/14);
+color: variables.$header-bar-link;
+}
+
+.specialization__header{
+
+    font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 27px;
+        line-height: calc(40/27);
+        text-transform: capitalize;
+        color: variables.$header-bar-link;
+}
+
+.specialization__list{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.specialization__type{
+    margin-top: 30px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 21px;
+line-height: 32px;
+display: flex;
+text-align: center;
+text-transform: capitalize;
+color: variables.$header-bar-link;
+justify-content: center;
+}
+
+.specialization__button{
+    margin-top: 15px;
+        height: 41px;
+        left: calc(50% - 109px/2 + 0.5px);
+        background-color: variables.$hover-and-button-color;
+        border-radius: 100px;
+            margin-left: auto;
+                margin-right: auto;
+                color: variables.$white-text-color;;
+                padding: 10px 17px;
+                display: flex;
+                align-items: center;
+}
+
+.specialization__image{
+margin: 30px auto 0 auto;
+}
+.specialization__item{
+    width: 100%
+}
+
+.specialization__item:nth-child(1){
+background-color: variables.$specialization1-background-color;
+margin-bottom: 30px;
+}
+.specialization__item:nth-child(2) {
+    background-color: variables.$specialization2-background-color;
+    margin-bottom: 30px;
+}
+.specialization__item:nth-child(3) {
+    background-color: variables.$specialization3-background-color;
+}
+
+@media (min-width: 480px) and (max-width: 767px){
+.specialization__item {
+        width: 450px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px){
+.specialization__list {
+    flex-direction: row;
+}
+.specialization__item {
+    width:226px;
+    margin-bottom: 0;
+
+}
+.specialization__item:not(:last-child){
+margin-right: 30px;
+}
+}
+@media (min-width: 1200px)  {
+    .specialization__list {
+        flex-direction: row;
+    }
+
+    .specialization__item {
+        width: 370px;
+        margin-bottom: 0;
+
+    }
+
+    .specialization__item:not(:last-child) {
+        margin-right: 30px;
+    }
+}
