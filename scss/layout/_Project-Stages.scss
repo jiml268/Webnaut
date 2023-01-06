@@ -94,6 +94,17 @@ justify-content: center;
  margin-left: 21px;  
     fill: white;
 }
+.project-stage__button:hover,.project-stage__button:focus{
+    background-color: #ecedf1;
+    color: variables.$hover-and-button-color;
+}
+
+.project-stage__button:hover .project-stage__button-icon, .project-stage__button:focus .project-stage__button-icon{
+    background-color: #ecedf1;
+    color: variables.$hover-and-button-color;
+    fill: currentColor;
+}
+
 
 @media (min-width: 468px) and (max-width: 767px) {
     .project-stage__button-top {

@@ -125,12 +125,19 @@
   position: relative;
 }
 
+
+
+
 .newsletter-contact__button-text {
   padding: 14px;
   font-weight: 400;
   font-size: 13px;
   line-height: 20px;
   color: variables.$white-text-color;
+}
+.newsletter-contact__button:hover, .newsletter-contact__button:focus{
+  background-color:  variables.$white-text-color;
+  color: variables.$hover-and-button-color;
 }
 
 .newsletter-contact_container {

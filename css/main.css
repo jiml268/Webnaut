@@ -585,6 +585,7 @@ body {
 
 .header-bar__contact-link:hover {
   color: #626CA9;
+  fill: #626CA9;
 }
 
 .header-bar__contact {
@@ -803,6 +804,11 @@ body {
   text-align: center;
   color: #626CA9;
   margin-bottom: 20px;
+}
+
+.hero__button:hover, .hero__button:focus {
+  background-color: #626ca9;
+  color: white;
 }
 
 .Hero__tetx {
@@ -1125,6 +1131,17 @@ body {
   fill: white;
 }
 
+.project-stage__button:hover, .project-stage__button:focus {
+  background-color: #ecedf1;
+  color: #626CA9;
+}
+
+.project-stage__button:hover .project-stage__button-icon, .project-stage__button:focus .project-stage__button-icon {
+  background-color: #ecedf1;
+  color: #626CA9;
+  fill: currentColor;
+}
+
 @media (min-width: 468px) and (max-width: 767px) {
   .project-stage__button-top {
     display: none;
@@ -1246,6 +1263,11 @@ body {
   padding: 10px 17px;
   display: flex;
   align-items: center;
+}
+
+.specialization__button:hover, .specialization__button:focus {
+  background-color: #FFFFFF;
+  color: #626CA9;
 }
 
 .specialization__image {
@@ -1574,6 +1596,11 @@ body {
   color: #FFFFFF;
 }
 
+.newsletter-contact__button:hover, .newsletter-contact__button:focus {
+  background-color: #FFFFFF;
+  color: #626CA9;
+}
+
 .newsletter-contact_container {
   margin-top: 40px;
   margin-bottom: 40px;
@@ -1590,17 +1617,18 @@ body {
   border-radius: 27px;
 }
 
-.newsletter-contact_link, .newsletter-contact_link:visited {
+.newsletter-contact_link,
+.newsletter-contact_link:visited {
   font-weight: 400;
   font-size: 13px;
   line-height: 1.5384615385;
   text-align: right;
   letter-spacing: -0.2px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .newsletter-contact_icon {
-  color: #FFFFFF;
+  color: #ffffff;
   fill: currentColor;
   margin-right: 12px;
   align-items: center;
@@ -1620,7 +1648,8 @@ body {
   margin-bottom: 28px;
 }
 
-.newsletter-contact_link:hover, .newsletter-contact_link:focus {
+.newsletter-contact_link:hover,
+.newsletter-contact_link:focus {
   color: rgb(98, 108, 169);
 }
 

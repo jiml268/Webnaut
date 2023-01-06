@@ -49,10 +49,15 @@ justify-content: center;
         border-radius: 100px;
             margin-left: auto;
                 margin-right: auto;
-                color: variables.$white-text-color;;
+                color: variables.$white-text-color;
                 padding: 10px 17px;
                 display: flex;
                 align-items: center;
+}
+
+.specialization__button:hover, .specialization__button:focus{
+    background-color: variables.$white-text-color;
+    color: variables.$hover-and-button-color;
 }
 
 .specialization__image{
