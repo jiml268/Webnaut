@@ -88,7 +88,8 @@
   .modal-window__label:active .modal-window__icon
   {
      color: variables.$hover-and-button-color;
-     fill: currentColor;
+    background-color: #626CA9;
+    
  }
 
   .modal-window__label:not(last-child) {
@@ -127,10 +128,12 @@
  }
 
  .modal-window__icon {
-     position: absolute;
-     top: 50%;
-     margin-left: 12px;
-     fill: black;
+        position: absolute;
+            top: 28%;
+            height: 50px;
+            width: 42px;
+            padding: 0 12px;
+            fill: #B5B5B5;;
  }
 
  .checkbox {
@@ -248,7 +251,7 @@ font-family: 'Poppins';
 
     &:hover,
     &:focus {
-        background-color: variables.$hover-and-button-color;
+        fill: #626CA9;
 
 
     }

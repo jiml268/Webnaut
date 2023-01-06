@@ -7,12 +7,6 @@
     margin-bottom: 50px;
 }
 
-.portfolio__button-item{
-    border: 1px solid #626CA9;
-    border-radius: 100px;
-padding: 10px 15px
-
-}
 
 .portfolio__buttons{
    
@@ -24,6 +18,9 @@ line-height: calc(21/14);
 color: #626CA9;
 background-color: white;
     border: none;
+    border: 1px solid #626CA9;
+        border-radius: 100px;
+        padding: 10px 15px
 }
 
 .portfolio__button-item:not(:last-child){
@@ -33,7 +30,7 @@ background-color: white;
 .portfolio__button-item:not(:nth-last-child(-n+3)){margin-bottom: 10px;}
 
 
-.portfolio__button-item:hover, .portfolio__button-item:focus{
+.portfolio__buttons:hover, .portfolio__buttons:focus{
     color: #FFFFFF;
     background-color: #626CA9;;
 }
@@ -204,6 +201,3 @@ color: #9C9C9C;
 
 }
 
-.header-bar{
-    position: unset;
-}

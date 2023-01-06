@@ -17,25 +17,25 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <title>portfolio page</title>
+    <title>Portfolio page</title>
   </head>
   <body>
-    <header class="header-bar__portfolio">
+    <header class="header-bar__portfolio ">
       <a href="./index.html" class="header-bar__logo"> Webnaut</a>
 
       <div class="header-bar__nav">
         <ul class="header-bar__list">
           <li class="header-bar__item">
-            <a href="./index.html" class="header-bar__link"> studio </a>
+            <a
+              href="./index.html"
+              class="header-bar__link "
+            >
+              studio
+            </a>
           </li>
 
           <li class="header-bar__item">
-            <a
-              href="./portfolio.html"
-              class="header-bar__link header-bar__current-page"
-            >
-              Portfolio
-            </a>
+            <a href="./portfolio.html" class="header-bar__link" header-bar__current-page> Portfolio </a>
           </li>
         </ul>
         <div class="header-bar__contact">
@@ -45,9 +45,9 @@
                 href="mailto:sayhello@studio.com"
                 class="header-bar__contact-link"
               >
-                <svg class="header-bar__contact-svg" width="20px" height="16px">
+                <svg class="header-bar__contact-svg" width="24px" height="24px">
                   <use
-                    href="./images/svg/symbol-defs.svg#icon-header-mail"
+                    href="./images/svg/symbol-defs.svg#icon-mail-icon"
                   ></use></svg
                 >sayhello@studio.com
               </a>
@@ -55,9 +55,9 @@
 
             <li class="header-bar__contact-item">
               <a href="tel:+4407813797570" class="header-bar__contact-link">
-                <svg class="header-bar__contact-svg" width="19px" height="19px">
+                <svg class="header-bar__contact-svg" width="24px" height="24px">
                   <use
-                    href="./images/svg/symbol-defs.svg#icon-header-phone"
+                    href="./images/svg/symbol-defs.svg#icon-phone-icon"
                   ></use></svg
                 >+44 (078) 1379 7570
               </a>
@@ -69,10 +69,8 @@
                 class="header-bar__contact-link"
                 target="_blank"
               >
-                <svg class="header-bar__contact-svg" width="15" height="17">
-                  <use
-                    href="./images/svg/symbol-defs.svg#icon-map-icon"
-                  ></use></svg
+                <svg class="header-bar__contact-svg" width="24" height="24">
+                  <use href="./images/svg/symbol-defs.svg#icon-map"></use></svg
                 >87 High Street, London
               </a>
             </li>
@@ -84,8 +82,10 @@
           class="menu-toggle js-open-menu"
           aria-expanded="false"
           aria-controls="mobile-menu"
+          aria-label="mobile menu"
         >
           <svg
+            class="menu-toggle__svg"
             width="24px"
             height="24px"
             fill="currentColor"
@@ -817,13 +817,13 @@
         </ul>
       </section>
     </main>
-    <footer class="container">
+  <footer class="container">
       <section class="footer__section">
         <div class="footer__nav-section">
           <a class="footer__logo" href="./index.html"> Webnaut</a>
           <ul class="social-media footer__social-media-top">
             <li class="social-media__item-footer">
-              <a href="#"
+              <a href="#" aria-label="Instagram logo"
                 ><svg width="20px" height="20px">
                   <use
                     href="./images/svg/symbol-defs.svg#icon-instagram-icon"
@@ -832,7 +832,7 @@
               </a>
             </li>
             <li class="social-media__item-footer">
-              <a href="#"
+              <a href="#" aria-label="Twitter logo"
                 ><svg width="20px" height="20px">
                   <use
                     href="./images/svg/symbol-defs.svg#icon-twitter-icon"
@@ -841,7 +841,7 @@
               </a>
             </li>
             <li class="social-media__item-footer">
-              <a href="#"
+              <a href="#" aria-label="Facebook logo"
                 ><svg width="20px" height="20px">
                   <use
                     href="./images/svg/symbol-defs.svg#icon-facebook-icon"
@@ -850,7 +850,7 @@
               </a>
             </li>
             <li class="social-media__item-footer">
-              <a href="#"
+              <a href="#" aria-label="linkedin logo"
                 ><svg width="20px" height="20px">
                   <use
                     href="./images/svg/symbol-defs.svg#icon-linkedin-icon"
@@ -874,22 +874,22 @@
         <div class="footer__contact-section">
           <ul class="footer__contact-list">
             <li class="footer__item">
-              <a class="footer__item-link" href="mailto:sayhello@studio.com">
-                <svg class="footer__svg" width="20px" height="20px">
-                  <use
-                    href="./images/svg/symbol-defs.svg#icon-mail-icon"
-                  ></use></svg
-                >sayhello@studio.com
-              </a>
-            </li>
-
-            <li class="footer__item">
               <a class="footer__item-link" href="tel:+4407813797570">
                 <svg class="footer__svg" width="20px" height="20px">
                   <use
                     href="./images/svg/symbol-defs.svg#icon-phone-icon"
                   ></use></svg
                 >+44 (078) 1379 7570
+              </a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__item-link" href="mailto:sayhello@studio.com">
+                <svg class="footer__svg" width="20px" height="20px">
+                  <use
+                    href="./images/svg/symbol-defs.svg#icon-mail-icon"
+                  ></use></svg
+                >sayhello@studio.com
               </a>
             </li>
 
@@ -911,7 +911,7 @@
         <div class="footer_social-section">
           <ul class="social-media footer__social-media-bottom">
             <li class="social-media__item">
-              <a href="#"
+              <a href="#" aria-label="Instagram logo"
                 ><svg width="20px" height="20px">
                   <use
                     href="./images/svg/symbol-defs.svg#icon-instagram-icon"
@@ -920,7 +920,7 @@
               </a>
             </li>
             <li class="social-media__item">
-              <a href="#"
+              <a href="#" aria-label="Twitter logo"
                 ><svg width="20px" height="20px">
                   <use
                     href="./images/svg/symbol-defs.svg#icon-twitter-icon"
@@ -929,7 +929,7 @@
               </a>
             </li>
             <li class="social-media__item">
-              <a href="#"
+              <a href="#" aria-label="Facebook logo"
                 ><svg width="20px" height="20px">
                   <use
                     href="./images/svg/symbol-defs.svg#icon-facebook-icon"
@@ -938,7 +938,7 @@
               </a>
             </li>
             <li class="social-media__item">
-              <a href="#"
+              <a href="#" aria-label="linkedin logo"
                 ><svg width="20px" height="20px">
                   <use
                     href="./images/svg/symbol-defs.svg#icon-linkedin-icon"
@@ -950,5 +950,203 @@
         </div>
       </section>
     </footer>
+    <!--Modal Section-->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal-window">
+        <button
+          type="button"
+          class="modal-window__close-button"
+          data-modal-close
+        >
+          <svg width="11" height="11">
+            <use href="./images/svg/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="modal-window__title">
+          Leave your information and we'll call you back
+        </p>
+
+        <form class="modal-window__form">
+          <label class="modal-window__label">
+            Name
+            <svg class="modal-window__icon" width="18" height="18">
+              <use href="./images/svg/icons.svg#icon-person-black"></use>
+            </svg>
+            <input
+              type="text"
+              name="name"
+              class="modal-window__input"
+              placeholder="Enter your name"
+              required
+            />
+          </label>
+          <label class="modal-window__label">
+            Telephone
+            <svg class="modal-window__icon" width="18" height="18">
+              <use href="./images/svg/icons.svg#icon-phone-black"></use>
+            </svg>
+            <input
+              required
+              type="tel"
+              name="phone"
+              placeholder="+44 (0XX) XXXX XXXX"
+              class="modal-window__input"
+            />
+          </label>
+          <label class="modal-window__label">
+            E-mail
+            <svg class="modal-window__icon" width="18" height="18">
+              <use href="./images/svg/icons.svg#icon-email-black"></use>
+            </svg>
+            <input
+              required
+              type="email"
+              name="email"
+              placeholder="example@mail.com"
+              class="modal-window__input"
+            />
+          </label>
+
+          <label class="modal-window__label">
+            Comments
+
+            <textarea
+              name="comment"
+              rows="5"
+              class="modal-window__input-comment"
+              placeholder="Enter the text"
+            ></textarea>
+          </label>
+
+          <input
+            required
+            class="checkbox"
+            type="checkbox"
+            name="terms"
+            value="agree"
+            id="checkbox-policy"
+          />
+          <label class="modal__checkbox-label" for="checkbox-policy">
+            <span class="modal-checkbox">
+              <svg width="11px" height="8px">
+                <use href="./images/svg/icons.svg#icon-checkmark"></use>
+              </svg>
+            </span>
+            <span class="modal__i-agree-text">
+              I agree to
+              <a href="#" target="_blank" class="modal__terms-condition-link">
+                Terms and Conditions
+              </a>
+              and
+              <a href="#" target="_blank" class="modal__terms-condition-link">
+                Data Policy
+              </a>
+            </span>
+          </label>
+          <button type="submit" class="modal-submit-button">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <ul class="menu__header">
+        <li>
+          <a class="menu__logo" href="./index.html"> Webnaut</a>
+        </li>
+        <li>
+          <button class="menu-toggle js-close-menu">
+            <svg
+              fill="#000000"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </li>
+      </ul>
+
+      <ul class="mobile-menu">
+        <li class="mobile-menu__item">
+          <a href="./index.html" class="mobile-menu__link"> studio</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="./portfolio.html" class="mobile-menu__link"> Portfolio</a>
+        </li>
+      </ul>
+      <div class="mobile-contact-footer">
+        <ul class="mobile-contact">
+          <li>
+            <a href="tel:+4407813797570" class="mobile-contact__link-phone"
+              ><svg class="mobile-contact__svg" width="20px" height="20px">
+                <use href="./images/svg/symbol-defs.svg#icon-phone-icon"></use>
+              </svg>
+              +44 (078) 1379 7570</a
+            >
+          </li>
+          <li>
+            <a
+              href="mailto:sayhello@studio.com"
+              class="mobile-contact__link-email"
+            >
+              <svg class="mobile-contact__svg" width="20px" height="20px">
+                <use
+                  href="./images/svg/symbol-defs.svg#icon-mail-icon"
+                ></use></svg
+              >sayhello@studio.com</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="mobile-contact__link-phone"
+              href="https://www.google.com/maps/place/87+High+St,+London+SE20+7HW,+UK/@51.4168889,-0.0560916,17z/data=!3m1!4b1!4m5!3m4!1s0x48760171a478dc33:0x5dbe798817e074f2!8m2!3d51.4168889!4d-0.0560916"
+              target="_blank"
+            >
+              <svg class="mobile-contact__svg" width="20px" height="20px">
+                <use
+                  href="./images/svg/symbol-defs.svg#icon-location-icon"
+                ></use></svg
+              >87 High Street, London, United Kingdom
+            </a>
+          </li>
+        </ul>
+        <ul class="mobile-media">
+          <li class="mobile-media__item">
+            <a href="#" target="_blank" class="mobile-media__link">
+              Instagram
+            </a>
+          </li>
+          <li class="mobile-media__item">
+            <a href="#" target="_blank" class="mobile-media__link"> Twitter </a>
+          </li>
+          <li class="mobile-media__item">
+            <a href="#" target="_blank" class="mobile-media__link">
+              Facebook
+            </a>
+          </li>
+          <li class="mobile-media__item">
+            <a href="#" target="_blank" class="mobile-media__link">
+              LinkedIn
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/modal.js"></script>
+    <script defer src="js/mobile-menu.js"></script>
+  </body>
+</html>
   </body>
 </html>

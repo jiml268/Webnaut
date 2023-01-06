@@ -95,31 +95,6 @@ body {
   margin-left: auto;
 }
 
-.menu-toggle {
-  min-height: 40px;
-  min-width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  cursor: pointer;
-  border: none;
-  border-radius: 50%;
-  outline: none;
-}
-
-@media (min-width: 768px) {
-  .menu-toggle {
-    display: none;
-  }
-}
-.menu-toggle:hover,
-.menu-toggle:focus {
-  background-color: #626CA9;
-}
-
 .mobile-menu {
   padding: 0;
   margin: 0;
@@ -189,14 +164,17 @@ body {
   font-weight: 400;
   font-size: 19px;
   line-height: 1.4736842105;
-  color: #626CA9;
+  color: #212121;
   margin-top: 20px;
   margin-bottom: 20px;
   text-decoration: none;
 }
 
-.mobile-contact__link:hover {
-  color: #2196F3;
+.mobile-contact__link-phone:hover, .mobile-contact__link-phone:focus,
+.mobile-contact__link-email:hover,
+.mobile-contact__link-email:focus {
+  color: #626CA9;
+  fill: currentColor;
 }
 
 .mobile-media {
@@ -211,7 +189,6 @@ body {
 
 .mobile-media__link {
   display: block;
-  padding: 0 10px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -221,7 +198,12 @@ body {
   color: #212121;
 }
 
+.mobile-media__item:not(:first-child) {
+  padding-left: 21px;
+}
+
 .mobile-media__item:not(:last-child) {
+  padding-right: 21px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
@@ -238,21 +220,19 @@ body {
     font-size: 30px;
   }
   .mobile-media {
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-    padding-top: 40px;
-    padding-left: 0;
-    margin: 0;
-    list-style: none;
+    flex-wrap: wrap;
   }
   .mobile-media__link {
     font-size: 13px;
     line-height: 22px;
     letter-spacing: 0.02em;
-    color: #2196F3;
-    padding-right: 10px;
-    margin-right: 10px;
+  }
+  .mobile-media__item:not(:first-child) {
+    padding-left: 8px;
+  }
+  .mobile-media__item:not(:last-child) {
+    padding-right: 8px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
 }
 .mobile-menu__item:not(:last-child) {
@@ -338,7 +318,7 @@ body {
 .modal-window__label:focus .modal-window__icon,
 .modal-window__label:active .modal-window__icon {
   color: #626CA9;
-  fill: currentColor;
+  background-color: #626CA9;
 }
 
 .modal-window__label:not(last-child) {
@@ -376,9 +356,11 @@ body {
 
 .modal-window__icon {
   position: absolute;
-  top: 50%;
-  margin-left: 12px;
-  fill: black;
+  top: 28%;
+  height: 50px;
+  width: 42px;
+  padding: 0 12px;
+  fill: #B5B5B5;
 }
 
 .checkbox {
@@ -493,7 +475,7 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-window__close-button:hover, .modal-window__close-button:focus {
-  background-color: #626CA9;
+  fill: #626CA9;
 }
 
 .header-bar {
@@ -689,7 +671,7 @@ body {
   }
 }
 .menu .link {
-  padding: 10px;
+  padding: 19px;
   color: inherit;
   text-decoration: none;
 }
@@ -719,9 +701,13 @@ body {
     display: none;
   }
 }
-.menu-toggle:hover,
-.menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
+.menu-toggle:hover .menu-toggle__svg,
+.menu-toggle:focus .menu-toggle__svg {
+  fill: #626CA9;
+}
+
+menu-toggle__svg:hover {
+  fill: #626CA9;
 }
 
 .menu-container {
@@ -745,8 +731,8 @@ body {
 
 .menu-container .menu-toggle {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 39px;
+  right: 18px;
   color: #FFFFFF;
 }
 
@@ -1881,12 +1867,6 @@ footer {
   margin-bottom: 50px;
 }
 
-.portfolio__button-item {
-  border: 1px solid #626CA9;
-  border-radius: 100px;
-  padding: 10px 15px;
-}
-
 .portfolio__buttons {
   font-family: "Poppins";
   font-style: normal;
@@ -1896,6 +1876,9 @@ footer {
   color: #626CA9;
   background-color: white;
   border: none;
+  border: 1px solid #626CA9;
+  border-radius: 100px;
+  padding: 10px 15px;
 }
 
 .portfolio__button-item:not(:last-child) {
@@ -1906,7 +1889,7 @@ footer {
   margin-bottom: 10px;
 }
 
-.portfolio__button-item:hover, .portfolio__button-item:focus {
+.portfolio__buttons:hover, .portfolio__buttons:focus {
   color: #FFFFFF;
   background-color: #626CA9;
 }
@@ -2069,8 +2052,4 @@ footer {
   color: #FFFFFF;
   margin-left: auto;
   margin-right: auto;
-}
-
-.header-bar {
-  position: unset;
 }/*# sourceMappingURL=main.css.map */

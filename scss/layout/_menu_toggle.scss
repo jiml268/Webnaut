@@ -3,33 +3,8 @@
 .header__menu-toggle{
   margin-left: auto;
 }
-
-.menu-toggle {
-    min-height: 40px;
-    min-width: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   
-    margin: 0;
-    padding: 0;
-    background-color: transparent;
-    cursor: pointer;
-    border: none;
-    border-radius: 50%;
-    outline: none;
-  }
   
-  @media (min-width: 768px) {
-    .menu-toggle {
-      display: none;
-    }
-  }
-  
-  .menu-toggle:hover,
-  .menu-toggle:focus {
-    background-color: variables.$hover-and-button-color;
-  }
   
  
   
@@ -106,15 +81,19 @@
       font-weight: 400;
       font-size: 19px;
       line-height: calc(28/19);
-      color: #626CA9;
+      color: #212121;
       margin-top: 20px;
       margin-bottom: 20px;
     text-decoration: none;
   }
  
 
-  .mobile-contact__link:hover {
-    color: #2196F3;  }
+  .mobile-contact__link-phone:hover, .mobile-contact__link-phone:focus,
+    .mobile-contact__link-email:hover,
+    .mobile-contact__link-email:focus {
+    color: #626CA9;
+  fill: currentColor;  }
+    
 
   .mobile-media {
    display: flex;
@@ -129,8 +108,6 @@
   
   .mobile-media__link {
     display: block;
-    padding: 0 10px;
-
     font-family: 'Poppins';
       font-style: normal;
       font-weight: 400;
@@ -140,7 +117,12 @@
       color: #212121;
   }
 
+.mobile-media__item:not(:first-child) {
+  padding-left: 21px;
+}
+
   .mobile-media__item:not(:last-child) {
+    padding-right: 21px;
 border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
   
@@ -157,24 +139,25 @@ border-right: 1px solid rgba(33, 33, 33, 0.2);
         font-size: 30px;          } 
 
         .mobile-media {
-          display: flex;
-          flex-direction: row;
-          margin: 0;
-           padding-top: 40px;
-           padding-left: 0;
-           margin: 0;
-           list-style: none;
-          }
+         
+          flex-wrap: wrap;
+          } 
 
-        
           .mobile-media__link {
         font-size: 13px;
         line-height: 22px;
         letter-spacing: 0.02em;
-        color: #2196F3;
-        padding-right: 10px;
-    margin-right: 10px;
           }
+          
+.mobile-media__item:not(:first-child) {
+  padding-left: 8px;
+}
+
+.mobile-media__item:not(:last-child) {
+  padding-right: 8px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
         }
 
                 .mobile-menu__item:not(:last-child) {
