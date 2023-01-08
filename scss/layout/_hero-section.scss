@@ -32,6 +32,7 @@
   width: 216px;
   background: variables.$white-text-color;
   border-radius: 100px;
+  border:variables.$white-text-color ;
   padding: 16px 0;
   font-weight: 600;
   font-size: 16px;
@@ -177,7 +178,7 @@
   .Hero__tetx {
     width: 590px;
     padding-left: 30px;
-    margin-left: 375px;
+    margin-left: 0px;
   }
 
   .hero-section {

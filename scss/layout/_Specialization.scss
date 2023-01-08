@@ -1,7 +1,13 @@
 @use "../utils/variables";
 
-.specialization__title{
+.specialization{
     margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+
+.specialization__title{
+    
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 400;
@@ -46,6 +52,7 @@ justify-content: center;
         height: 41px;
         left: calc(50% - 109px/2 + 0.5px);
         background-color: variables.$hover-and-button-color;
+        border: variables.$hover-and-button-color;
         border-radius: 100px;
             margin-left: auto;
                 margin-right: auto;
@@ -57,23 +64,31 @@ justify-content: center;
 
 .specialization__button:hover, .specialization__button:focus{
     background-color: variables.$white-text-color;
+    border: variables.$hover-and-button-color;
     color: variables.$hover-and-button-color;
 }
 
 .specialization__image{
-margin: 30px auto 0 auto;
+margin: 0 auto;
+padding-top: 47px;
 }
+.specialization__image-big{
+    margin: 0px auto 0 auto;
+    padding-top: 22px;
+    }
 .specialization__item{
     width: 100%
 }
 
+.specialization__item:not(:last-child){
+    margin-bottom: 30px;
+}
 .specialization__item:nth-child(1){
 background-color: variables.$specialization1-background-color;
-margin-bottom: 30px;
 }
 .specialization__item:nth-child(2) {
     background-color: variables.$specialization2-background-color;
-    margin-bottom: 30px;
+    
 }
 .specialization__item:nth-child(3) {
     background-color: variables.$specialization3-background-color;
@@ -96,6 +111,7 @@ margin-bottom: 30px;
 }
 .specialization__item:not(:last-child){
 margin-right: 30px;
+margin-bottom: 0px;
 }
 }
 @media (min-width: 1200px)  {

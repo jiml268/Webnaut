@@ -6,6 +6,7 @@
 .project-stage{
     max-width: 479;
     margin-top: 40px;
+    background-color: rgba(249, 249, 249, 1);
 }
 
 .project-stage__flex{
@@ -84,6 +85,7 @@ margin-bottom: 30px;
 height: 52px;
     background: variables.$hover-and-button-color;
 border-radius: 100px;
+border: variables.$hover-and-button-color;
 justify-content: center;
     align-items: center;
     color: white;
@@ -107,6 +109,7 @@ justify-content: center;
 
 
 @media (min-width: 468px) and (max-width: 767px) {
+
     .project-stage__button-top {
             display: none;
         }
@@ -117,6 +120,8 @@ justify-content: center;
 .project-stage {
         max-width: 480px;
         width: 480px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .project-stage__list {
@@ -143,6 +148,8 @@ justify-content: center;
     .project-stage{
         max-width: 768px;   
         width: 768px ;
+        margin-left: auto;
+    margin-right: auto;
     }
 
     .project-stage__list{
@@ -150,6 +157,7 @@ justify-content: center;
 display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+   
 } 
 
 .project-stage__item {

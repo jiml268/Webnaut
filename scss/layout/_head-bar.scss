@@ -1,7 +1,6 @@
 @use "../utils/variables";
 .header-bar{
     width: 100%;
-    position: absolute;
     z-index: 2;
     background-color: variables.$white_background-color ;
     display: flex;
@@ -121,9 +120,14 @@ color: variables.$header-bar-link;
     padding-right: 6px;
 }
 
-
-
-
+@media (min-width: 480px){
+.header-bar{
+    width: 480px;
+    max-width: 480px;
+margin-left: auto;
+margin-right: auto;
+}
+}
 
 @media (max-width:767px)
 {
@@ -135,6 +139,14 @@ color: variables.$header-bar-link;
     }
 }
 @media (min-width:768px) {
+    .header-bar{
+        width: 768px;
+        max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+
     .header-bar__hamburger
     {display: none;}
     .header-bar__list {
@@ -159,6 +171,13 @@ color: variables.$header-bar-link;
         }
 }
 @media (min-width:1200px) {
+    .header-bar{
+        width: 1200px;
+        max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
     .header-bar__contact {
         flex-direction: column;
     }
